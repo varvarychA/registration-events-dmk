@@ -1,5 +1,6 @@
 $primary-color: rgba(247,197,181,1)
 $secondary-color: #e1e1e1
+$extra-grey-color: #606060
 $header-adds-color: rgba(145,145,145,1)
 
 
@@ -26,18 +27,43 @@ section
     overflow: hidden
     width: 100%
     height: auto
-    min-height: 100vh
-    display: flex
-    flex-direction: row
-    justify-content: center
-    align-items: center
+    position: relative
 h1
     font-size: 36px
     color: $header-adds-color
-    margin-top: 30px
+h2
+    margin: 0px
+    font-size: 46px
+    color: $primary-color
 .container
     width: 100%
     overflow: hidden
+/* ------------------- Вертикальные линии макета  ------------------- */ 
+
+.vertical-black-line-1
+    width: 1px
+    height: 100%
+    position: absolute
+    left: 18%
+    top: 0px
+    background-color: black
+.vertical-black-line-3
+    width: 1px
+    height: 100%
+    position: absolute
+    left: 7%
+    top: 0px
+    background-color: black
+.vertical-white-line
+    width: 1px
+    height: 100%
+    position: absolute
+    left: 10%
+    top: 0px
+    background-color: white    
+
+/* ---------------------------------------------------------------------------- */ 
+
 /* ------------------- Верхняя строка от сайта ДМК ------------------- */    
 .top-line
     width: 100%
@@ -98,27 +124,574 @@ header .right a
     color: #201e1f
     font-size: 12px
     text-decoration: none
-
+    text-transform: uppercase
+.h2-add-text
+    position: relative
+    color: $secondary-color
+    font-size: 40px
+    left: -45px
+    top: 18px
 /* ---------------------------------------------------------------------------- */ 
 
 
 
 
 /* ------------------- Стартовый блок ------------------- */
-
-.start
-    background-image: url(../img/background-video-section.png)
-    background-size: cover
-    background-position: left top
-    background-repeat: no-repeat
-.start .header-container
+.start:before
+    content: " "
+    display: block
+    position: absolute
+    width: 100%
+    height: 70%
+    background: $primary-color
+    z-index: -3
+.start:after
+    content: " "
+    display: block
+    position: absolute
+    width: 40%
+    height: 30%
+    background: $secondary-color
+    z-index: -3
+    left: 10%
+    top: 70%
+.start h1
     padding-left: 21%
+    padding-top: 15px
 .start .video-container
-    padding-left: 21%
-    width: 58%
-
-
+    margin-left: 7%
+    width: 85%
+    position: relative
+    height: auto
+    overflow: hidden
 .video-container video
     width: 100%
-    background: url(../img/video-background.png)
+    height: 500px
+    background-image: url(../img/video-background.png)
+.start .vertical-black-line-3
+    top: 175px
+.start .post-text-container
+    margin-left: 19%
+    font-size: 18px  
+    padding-bottom: 75px
+    padding-top: 10px
+.start .vertical-white-line
+    display: none
+.navigation-container
+    width: 100%
+    max-width: 1100px
+    margin: 0px auto
+    overflow: hidden
+.navigation-container ul
+    float: right
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    padding-right: 15px
+.navigation-container ul li
+    display: inline-block
+    margin-left: 15px
+.navigation-container ul li:before
+    display: inline-block
+    content: "|"
+    padding-right: 15px
+    color: #80aa6d
+.navigation-container ul li:first-child:before
+    display: none
+.navigation-container ul li a
+    color: black
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 10px
 
+/* ------------------- Блок "Декоративная линия ДМК" ------------------- */
+
+.decorative-line .left
+    width: 54%
+    height: auto
+    position: relative
+    overflow: hidden
+    padding-top: 1.5%
+    padding-bottom: 5%
+.decorative-line .left:before
+    content: " "
+    display: block
+    width: 95%
+    height: 100%
+    position: absolute
+    left: 0px
+    top: 0px
+    background-color: $primary-color
+    z-index: -5
+.decorative-line .left:after
+    content: " "
+    display: block
+    width: 100%
+    height: 90%
+    position: absolute
+    left: 0px
+    top: 0px
+    background-color: $secondary-color
+    z-index: -9
+.decorative-line .right
+    width: 46%
+    height: auto
+    position: relative
+    overflow: hidden
+    padding-top: 1.5%
+    padding-left: 3%
+    padding-right: 3%
+.decorative-line .left img
+    width: 79%
+    display: inline-block
+    margin-left: 18.54%
+.decorative-line .right h3
+    font-size: 36px
+    color: $secondary-color
+    position: relative
+    margin: 0px
+    padding-left: 30%
+    top: -28px
+.decorative-line .right p
+    position: relative
+    padding-left: 30% 
+    padding-right: 15% 
+    margin-top: -15px
+/* -------------------  ------------------- */
+
+/* ------------------- Блок с преимуществами ------------------- */
+.benefits
+    padding-top: 5%
+.benefits .left
+    width: 35%
+    height: auto
+    position: relative
+    overflow: hidden
+    padding-bottom: 4%
+    padding-top: 1.63%
+.benefits .left:before
+    content: " "
+    display: block
+    width: 80%
+    height: 90.58%
+    position: absolute
+    left: 15%
+    top: 0px
+    background-color: $primary-color
+    z-index: -5
+.benefits .left:after
+    content: " "
+    display: block
+    width: 90%
+    height: 100%
+    position: absolute
+    left: 0px
+    top: 3.65%
+    background-color: $secondary-color
+    z-index: -9
+.benefits .right
+    width: 65%
+    height: auto
+    position: relative
+    overflow: hidden
+    padding-left: 10%
+    padding-right: 3%
+    padding-top: 1.63%
+.benefits .left img
+    display: inline-block
+    width: 75%
+    margin-left: 15%
+.benefits .vertical-black-line-3
+    display: none
+.benefits .vertical-white-line
+    top: 25%
+.benefits .vertical-black-line-3
+    z-index: -8
+.benefits .container:before
+    content: ""
+    display: block
+    position: absolute
+    width: 100px
+    background: $primary-color
+    height: 4%
+    left: 14%
+.benefits .right h2
+    margin-top: 0px
+.benefits .right ul
+    list-style: none
+    padding-left: 0px
+    padding-top: 3%
+.benefits .right ul li
+    margin-top: 4%
+.benefits .right ul li:before
+    content: ""
+    display: block
+    width: 17px
+    height: 16px
+    background-image: url(../img/benefits-list-style.png)
+    background-size: contain
+    backgound-position: center
+    background-repeat: no-repeat
+    float: left
+    padding-right: 10px
+    margin-bottom: 15px
+
+/* -------------------  ------------------- */
+
+
+
+/* ------------------- Блок про Данне ------------------- */
+
+.about-danne
+    padding-top: 5%
+.about-danne .left
+    width: 50%
+    padding: 75px 45px
+    position: relative
+    padding-right: 0px
+    padding-bottom: 0px
+.about-danne .right
+    width: 50%
+.about-danne-text
+    background-color: $extra-grey-color
+    padding: 5% 10%
+    padding-bottom: 7%
+    padding-left: 10%
+    color: white
+.about-danne h2
+    margin-bottom: 35px
+.about-danne-p-container
+    position: relative
+.about-danne-p-container:before
+    display: block
+    content: " "
+    position: absolute
+    top: -67px
+    left: -35px
+    width: 25%
+    height: 89px
+    background-image: url(../img/danne-symbol-top.png)
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+.about-danne-p-container:after
+    display: block
+    content: " "
+    position: absolute
+    bottom: -54px
+    right: -29px
+    width: 117px
+    height: 89px
+    background-image: url(../img/danne-symbol-bottom.png)
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+.about-danne .container
+    background-color: $secondary-color
+.about-danne .right img
+    width: 85%
+    margin-top: 5%
+    position: relative
+    bottom: -7px
+/* -------------------  ------------------- */
+
+
+/* ------------------- Слайдер ------------------- */
+
+.slider
+    background-color: $extra-grey-color
+    padding-bottom: 9%
+    height: 105vh
+.gallery
+    width: 100%
+    margin: 0px auto
+    margin-top: 2.5%
+    position: absolute
+.slider img
+    width: 100%
+.slick-current img
+    width: 150%
+    position: relative
+    left: -25%
+.slick-active
+    position: relative
+    overflow: hidden 
+    margin-top: 0.65%
+    transition: 0.7s
+.slick-current
+    overflow: visible
+    position: relative
+    z-index: 999
+    margin-top: 0px
+    transition: 0.7s
+.slick-slide
+    transition: 2.7s
+.slick-active:before
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba(255,255,255,0.7)
+.slider-adds-info
+    margin-left: 18%
+    padding-left: 30px
+    border-left: 1px solid white
+    color: white
+    margin-top: 4%
+    padding-top: 10px
+    line-height: 1.5
+    padding-bottom: 10px
+
+/* -------------------    ------------------- */
+
+
+
+/* ------------------- Блок с результатами лечения ------------------- */
+.results
+    background: url(../img/background-result-section.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: top right
+.result-photo-container
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    flex-wrap: wrap
+.photo-item
+    width: 25%
+    overflow: hidden
+    position: relative
+    margin: 0px 3%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+.photo-item img
+    width: 85%
+    display: block
+    margin: 30px auto
+.results h2
+    text-align: center
+    padding-left: 15%
+    padding-top: 4%
+.results .h2-add-text
+    top: -24px
+    left: -40px
+.results .vertical-white-line
+    left: 66.8%
+    background: $secondary-color
+/* -------------------   ------------------- */
+
+
+
+/* ------------------- Блок с постерами фильмов ------------------- */
+
+.hollywood
+    background-color: $primary-color
+    padding: 8% 4%
+    padding-right: 1%
+.hollywood .left
+    width: 70%
+.hollywood .right
+    width: 30%
+.films-container
+    width: 94.3%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    overflow: hidden
+    position: relative
+    float: left
+.films-item
+    width: 16%
+    overflow: hidden
+    position: relative
+.films-item img
+    width: 100%
+.films-item:before
+    content: ""
+    display: block
+    width: 100%
+    height: 100%
+    background-color: $primary-color
+    position: absolute
+    opacity: 0.65
+    transition: 0.7s
+.films-item:hover:before
+    opacity: 0
+.hollywood h2 strong
+    color: white
+.hollywood h2
+    color: $extra-grey-color
+    font-size: 30px
+    text-transform: uppercase
+.hollywood h2:after
+    content: " "
+    width: 35%
+    height: 1.4px
+    display: block
+    margin-top: 18px
+    margin-bottom: 18px
+    background-color: $extra-grey-color
+.hollywood .right p
+    color: $extra-grey-color
+    font-size: 16px
+.hollywood .vertical-white-line
+    left: 66.8%
+/* -------------------    ------------------- */
+
+
+
+/* ------------------- Блок об обучении ------------------- */
+.education
+    padding: 3% 0px
+.education .left
+    width: 50%
+    position: relative
+    z-index: 1
+.education .right
+    width: 50%
+    position: relative
+    z-index: 4
+    overflow: visible
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-item: center
+    height: 100%
+    padding-bottom: 3%
+.education .left img
+    width: 100%
+.education .right p
+    padding-top: 15%
+    padding-bottom: 15%
+    padding-left: 37.5%
+    padding-right: 10%
+    background-color: $primary-color
+    position: relative
+    left: -2.1%
+    z-index: 9
+.education .vertical-white-line
+    left: 66.8%
+    z-index: 5
+.education .right h2
+    padding-left: 31%
+.education .container
+    display: flex
+    flex-direction: row
+    align-items: center
+.h2-add-text
+    left: -175px
+    top: 21px
+/* -------------------    ------------------- */
+
+
+
+
+/* ------------------- Блок "Как заказать косметику" ------------------- */
+
+.get .left
+    width: 70%
+    padding-bottom: 5%
+.get .right
+    width: 30%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    padding-top: 6.4%
+    padding-right: 3%
+.get-left-background
+    width: 30%
+    height: 100%
+    background-color: $extra-grey-color
+    position: absolute
+    top: 0px
+    left: 0px
+    z-index: -1
+    overflow: hidden
+.get .left > p
+    padding-left: 43.5%
+    font-size: 36px
+    margin-top: 0px
+    margin-bottom: 0px
+    padding-bottom: 2.4%
+    position: relative
+    padding-top: 2.4%
+    text-transform: uppercase
+.get-left-background-p
+    text-align: right
+    padding-top: 0%
+    font-size: 36px
+    color: white
+    margin-top: 0px
+    padding-top: 5.4%
+    text-transform: uppercase
+    padding-right: 1.3%
+    margin-bottom: 0px!important
+    padding-bottom: 5.4%
+    top: 0px!important
+.get .left img
+    width: 90%
+    padding-left: 10%
+.get-right-item
+    display: flex
+    flex-direction: row
+    justify-content: left
+    margin-bottom: 21%
+.get-right-item h3
+    margin: 0px
+    color: $primary-color
+    font-size: 36px
+    line-height: 0.9
+.get-right-inner-item-number
+    font-size: 36px
+    color: $primary-color
+    padding-right: 5%
+    line-height: 0.9
+    font-weight: bold
+.get-right-item p
+    color: $extra-grey-color
+.get-right-item a
+    color: $extra-grey-color
+    padding: 15px 15px
+    background-color: $secondary-color
+    display: inline-block
+    font-size: 19px
+    text-align: center
+    text-transform: uppercase
+    text-decoration: none    
+
+/* -------------------   ------------------- */
+
+
+
+
+/* ------------------- Футер ------------------- */
+
+footer
+    background-color: $secondary-color
+    overflow: hidden
+    position: relative
+    margin-top: 5%
+footer img
+    padding: 15px
+footer .right
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+    height: 150px
+    padding-right: 45px
+.separator-block
+    display: block
+    width: 1px
+    background-color: $extra-grey-color
+    height: 46px
+footer .right > div
+    margin: 0px 18px
+footer .telephone-cont p
+    margin: 0px
+footer .telephone-cont p:first-child
+    margin-bottom: 15px
+/* -------------------   ------------------- */  
