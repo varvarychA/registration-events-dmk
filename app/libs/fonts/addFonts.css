@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Bebas Neue Bold";
+    src: url("../fonts/BebasNeueBold.otf") format("opentype");
+    src: url("../fonts/BebasNeueBold.eot") format("embedded-opentype"),
+         url("../fonts/BebasNeueBold.ttf") format("truetype"),
+         url("../fonts/BebasNeueBold.woff") format("woff");
+}
+@font-face {
+    font-family: "Bebas Neue Book";
+    src: url("../fonts/BebasNeueBook.otf") format("opentype");
+    src: url("../fonts/BebasNeueBook.eot") format("embedded-opentype"),
+         url("../fonts/BebasNeueBook.ttf") format("truetype"),
+         url("../fonts/BebasNeueBook.woff") format("woff");
+}
+@font-face {
+    font-family: "Bebas Neue Light";
+    src: url("../fonts/BebasNeue-Light.otf") format("opentype");
+    src: url("../fonts/BebasNeue-Light.eot") format("embedded-opentype"),
+         url("../fonts/BebasNeue-Light.ttf") format("truetype"),
+         url("../fonts/BebasNeue-Light.woff") format("woff");
+}
+@font-face {
+    font-family: "Bebas Neue Regular";
+    src: url("../fonts/BebasNeueRegular.otf") format("opentype");
+    src: url("../fonts/BebasNeueRegular.eot") format("embedded-opentype"),
+         url("../fonts/BebasNeueRegular.ttf") format("truetype"),
+         url("../fonts/BebasNeueRegular.woff") format("woff");
+}
+@font-face {
+    font-family: "Bebas Neue Thin";
+    src: url("../fonts/BebasNeue-Thin.otf") format("opentype");
+    src: url("../fonts/BebasNeue-Thin.eot") format("embedded-opentype"),
+         url("../fonts/BebasNeue-Thin.ttf") format("truetype"),
+         url("../fonts/BebasNeue-Thin.woff") format("woff");
+}
+@font-face {
+    font-family: "Carefree Cyrillic";
+    src: url("../fonts/CarefreeCyrillic.otf") format("opentype");
+    src: url("../fonts/CarefreeCyrillic.eot") format("embedded-opentype"),
+         url("../fonts/CarefreeCyrillic.ttf") format("truetype"),
+         url("../fonts/CarefreeCyrillic.woff") format("woff");
+}
+@font-face {
+    font-family: "Solomon Sans Normal";
+    src: url("../fonts/Solomon-Sans-Normal.otf") format("opentype");
+    src: url("../fonts/Solomon-Sans-Normal.eot") format("embedded-opentype"),
+         url("../fonts/Solomon-Sans-Normal.ttf") format("truetype"),
+         url("../fonts/Solomon-Sans-Normal.woff") format("woff");
+}
+@font-face {
+    font-family: "Solomon Sans Normal Italic";
+    src: url("../fonts/Solomon-Sans-Normal-Italic.otf") format("opentype");
+    src: url("../fonts/Solomon-Sans-Normal-Italic.eot") format("embedded-opentype"),
+         url("../fonts/Solomon-Sans-Normal-Italic.ttf") format("truetype"),
+         url("../fonts/Solomon-Sans-Normal-Italic.woff") format("woff");
+}
+@font-face {
+    font-family: "Didona";
+    src: url("../fonts/Didona.otf") format("opentype");
+    src: url("../fonts/Didona.eot") format("embedded-opentype"),
+         url("../fonts/Didona.ttf") format("truetype"),
+         url("../fonts/Didona.woff") format("woff");
+}
