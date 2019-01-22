@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
                 var target_top = jQuery(target).offset().top;
                 jQuery('html, body').animate({
                 	scrollTop: target_top
-                }, 1000);
+                }, 2500);
                 return false;
             });
         }
