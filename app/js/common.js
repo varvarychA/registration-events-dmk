@@ -48,4 +48,22 @@ $('.gallery').slick({
         }
     ]
     });
+
+
+/*----- Гамбургер адаптивного меню ------*/
+$('.hamburger').click(function(){
+    element = $('.dmk-menu-main');
+    display = element.css('display');
+    if(display == 'none')
+        $('.dmk-menu-main').slideDown(400);
+    if(display == 'flex')
+        $('.dmk-menu-main').slideUp(400);
+});
+ 
+$('.dmk-menu-main li').click(function(){
+    var header = $('header');
+    var widthHead = header.width();
+    if(widthHead < 1170)
+        $('.dmk-menu-main').slideUp(400);
+});
 /*-----    ------*/

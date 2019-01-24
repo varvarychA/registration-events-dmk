@@ -1,5 +1,6 @@
 @import "app/libs/fonts/addFonts"
 
+
 $primary-color: rgba(247,197,181,1)
 $secondary-color: #e1e1e1
 $extra-grey-color: #606060
@@ -145,6 +146,11 @@ header .right a
     font-size: 40px
     left: -45px
     top: 18px
+.hamburger
+    display: none
+
+
+
 /* ---------------------------------------------------------------------------- */ 
 
 
@@ -815,3 +821,121 @@ footer .left
 footer .left
     padding: 35px
 /* -------------------   ------------------- */  
+
+
+
+
+/* ------------------- Страница с клиниками ------------------- */
+
+.all-clinics-list 
+    width: 85%
+    margin: 30px auto
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    flex-wrap: wrap
+    overflow: hidden
+.clinic
+    width: 300px
+    height: auto
+    padding: 9px
+    disolay: flex
+    flex-direction: column
+    justify-content: space-around
+    overflow: hidden
+    border: 1px solid $secondary-color
+    margin-top: 38px
+.clinic-logo-img
+    width: 100%
+    text-align: center
+.clinic-logo-img img
+    height: 85px
+.clinic-tittle-block
+    width: 100%
+.clinic-tittle-block h3
+    text-align: center
+    font-size: 15px
+    text-transform: uppercase
+.clinic-info-block
+    width: 100%
+    disolay: flex
+    flex-direction: column
+    justify-content: space-around
+    overflow: hidden
+.clinic-info-block > div
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: left
+    overflow: hidden
+    align-items: center
+.clinic-info-block img
+    width: 65px
+.sec-nav-cont 
+	width: 100%
+	padding-left: 5%
+	margin-top: 45px
+.sec-nav-inner
+	width: 100%
+	display: block
+	border-left: 30px solid $primary-color
+	height: 95px  
+	background-position: center
+	background-repeat: no-repeat
+	max-width: 750px
+	font-weight: bold 
+	font-size: 175%
+	padding-left: 30px
+	padding-top: 23px
+	border-bottom: 1.5px solid $primary-color
+	box-shadow: 0 0 10px rgba(0,0,0,0.5) 
+	margin-top: 15px
+.sec-nav-inner:hover 
+	height: 215px 
+	font-size: 300%
+.transition 
+	transition: 0.7s!important
+.sec-nav-inner
+    background-size: cover
+    color: $extra-grey-color
+    text-decoration: none
+    margin: 15px auto
+    position: relative
+    overflow: hidden
+
+
+
+
+.kiev-fon 
+    background-image: url(https://danne.com.ua/wp-content/uploads/2018/06/kiev-fon-1.png)
+.dnepr-fon 
+    background-image: url(https://danne.com.ua/wp-content/uploads/2018/06/dnepr-fon-1.png)
+.harkov-fon 
+    background-image: url(https://danne.com.ua/wp-content/uploads/2018/06/harkov-fon-1.png)
+.herson-fon 
+    background-image: url(https://danne.com.ua/wp-content/uploads/2018/06/herson-fon-1.png)
+.odesa-fon 
+    background-image: url(https://danne.com.ua/wp-content/uploads/2018/06/odesa-fon-1.png)
+.rog-fon 
+    background-image: url(https://danne.com.ua/wp-content/uploads/2018/06/rog-fon-1.png)
+.zaporihy-fon 
+    background-image: url(https://danne.com.ua/wp-content/uploads/2018/06/zapor-fon-1.png)
+.vin-fon 
+    background-image: url(https://danne.com.ua/wp-content/uploads/2018/06/vinnica-1.png)
+.zapad-fon 
+    background-image: url(https://danne.com.ua/wp-content/uploads/2018/06/zapadukr-1.png)
+.hyst-fon 
+    background-image: url(https://danne.com.ua/wp-content/uploads/2018/06/hust-1.png)
+.lvov-fon 
+    background-image: url(https://danne.com.ua/wp-content/uploads/2018/06/lvov-1.png)
+.uzhorod-fon 
+    background-image: url(https://danne.com.ua/wp-content/uploads/2018/06/uzhorod-1.png)
+
+    
+
+
+
+
+/* -------------------   ------------------- */ 
+
+@import "app/sass/media"
