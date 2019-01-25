@@ -89,6 +89,9 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 	var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
 	.pipe(gulp.dest('dist'));
 
+	var buildSlickFonts = gulp.src('app/css/fonts/**/*') // Переносим HTML в продакшен
+	.pipe(gulp.dest('dist/css/fonts'));
+
 });
 
 gulp.task('clear', function (callback) {
