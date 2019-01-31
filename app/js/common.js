@@ -1,5 +1,5 @@
 
-/*----- Плагин для плавной прокрутки к якорю ------*/
+/*----- Плагин для плавной прокрутки к якорю ------
 jQuery(document).ready(function() {
     setup_slight_scroll_to_anchors();
     
@@ -15,10 +15,10 @@ jQuery(document).ready(function() {
                 return false;
             });
         }
-});
+});*/
 /*-----    ------*/
 
-/*----- Запуск слайдера галлереи ------*/
+/*----- Запуск слайдера галлереи ------
 $('.gallery').slick({
     infinite: true,
     slidesToScroll: 1,
@@ -48,9 +48,9 @@ $('.gallery').slick({
         }
     ]
     });
+*/
 
-
-/*----- Гамбургер адаптивного меню ------*/
+/*----- Гамбургер адаптивного меню ------
 $('.hamburger').click(function(){
     element = $('.dmk-menu-main');
     display = element.css('display');
@@ -65,5 +65,5 @@ $('.dmk-menu-main li').click(function(){
     var widthHead = header.width();
     if(widthHead < 1170)
         $('.dmk-menu-main').slideUp(400);
-});
+});*/
 /*-----    ------*/
