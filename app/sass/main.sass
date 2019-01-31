@@ -515,7 +515,21 @@ header .right a
     margin-top: 4%
     line-height: 1.3
     text-transform: uppercase
-
+.slick-prev
+    left: 98px
+    z-index: 99999
+    transform: rotate(180deg)
+.slick-prev:before
+    font-size: 75px
+    color: $extra-grey-color
+    content: "\27A4"
+.slick-next
+    right: 98px
+    z-index: 99999
+.slick-next:before
+    font-size: 75px
+    color: $extra-grey-color
+    content: "\27A4"
 /* -------------------    ------------------- */
 
 
@@ -936,5 +950,82 @@ footer .left
 
 
 /* -------------------   ------------------- */ 
+
+/* ------------------- Страница с обучением ------------------- */ 
+
+.education-events-list
+    display: flex
+    flex-direction: column
+    justify-content: center
+    max-width: 1100px
+    margin: 0px auto
+    padding: 15px
+    overflow: hidden
+.education-events-list .education-events-item
+    overflow: hidden
+    width: 100%
+    height: auto
+    padding: 30px 9px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+.education-events-list .left
+    width: 75%
+    border: 1px solid $secondary-color
+    padding: 24px
+    padding-left: 25px
+    border-right: none
+.education-events-list .right
+    width: 25%
+    padding: 15px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    background-color: $primary-color
+    border: 1px solid $secondary-color
+.education-events-list .education-events-item:after
+    width: 100%
+    height: 1px
+    background-color: $extra-grey-color
+    display: block
+    float: right
+    margin-top: 61px
+.education-events-list .left a
+    display: inline-block
+    background-color: $extra-grey-color
+    padding: 9px 21px
+    text-align: center
+    color: white
+    text-transform: uppercase
+    text-decoration: none
+    font-weight: 700
+.education-events-list .right .place
+    display: block
+    text-align: center
+    background-color: $primary-color
+    color: white
+    padding: 4px 0px
+    font-size: 28px
+.education-events-list .right .place p
+    margin: 0px
+.education-events-list .right .date
+    font-size: 18px
+    color: $extra-grey-color
+    text-align: center
+    font-weight: bold
+.education-page-header h2
+    font-size: 95px
+
+.education-page-header .container
+    text-align: left
+    padding: 35px
+    max-width: 1097px
+    margin: 0px auto
+.education-page-header .container .h2-add-text
+    font-size: 48px
+    text-transform: none
+/* -------------------   ------------------- */ 
+
 
 @import "app/sass/media"
